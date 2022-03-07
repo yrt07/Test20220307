@@ -7,6 +7,7 @@ public class TestStateMachine : StateMachineBase<TestStateMachine>
     private void Start()
     {
         ChangeState(new TestStateMachine.Neutral(this));
+        Debug.Log("Start!");
     }
     //commitテスト。。
     private class Neutral : StateBase<TestStateMachine>
